@@ -1,6 +1,6 @@
 export const profile = {
   name: "Zeeshan Amjad",
-  role: "QA Automation Engineer / SDET",
+  role: "Software Engineer",
   tagline:
     "I build maintainable test automation that keeps web apps, APIs, and CI pipelines honest — and I design AI-assisted workflows that make software delivery faster and safer.",
   location: "Pakistan · Remote-ready",

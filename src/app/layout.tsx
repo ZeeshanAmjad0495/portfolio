@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 const description =
-  "Zeeshan Amjad — QA Automation Engineer / SDET with 4+ years building maintainable test automation across web, API, and CI pipelines, plus AI-assisted SDLC/STLC workflows.";
+  "Zeeshan Amjad — Software Engineer with 4+ years building maintainable test automation across web, API, and CI pipelines, plus AI-assisted SDLC/STLC workflows.";
 
 export const metadata: Metadata = {
   title: {
@@ -23,7 +23,8 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
-    "QA Automation Engineer",
+    "Software Engineer",
+    "QA Automation",
     "SDET",
     "Playwright",
     "Cypress",
