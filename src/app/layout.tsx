@@ -1,20 +1,37 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Cinzel,
+  Inter,
+  JetBrains_Mono,
+  IM_Fell_English_SC,
+} from "next/font/google";
 import "./globals.css";
 import { profile } from "@/data/portfolio";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const jetbrains = JetBrains_Mono({
+  variable: "--font-jetbrains",
   subsets: ["latin"],
+});
+
+const imfell = IM_Fell_English_SC({
+  variable: "--font-imfell",
+  subsets: ["latin"],
+  weight: "400",
 });
 
 const description =
-  "Zeeshan Amjad — Software Engineer with 4+ years building maintainable test automation across web, API, and CI pipelines, plus AI-assisted SDLC/STLC workflows.";
+  "Zeeshan Amjad — automation engineer, systems builder, and AI-assisted architect. Builds automation frameworks, multi-tenant backends, AI-assisted workflows, and quality-focused platforms.";
 
 export const metadata: Metadata = {
   title: {
@@ -23,14 +40,18 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
-    "Software Engineer",
-    "QA Automation",
+    "Automation Engineer",
     "SDET",
+    "Systems Builder",
+    "AI Engineering",
     "Playwright",
-    "Cypress",
-    "Test Automation",
+    "TypeScript",
+    "NestJS",
+    "FastAPI",
+    "Multi-tenant SaaS",
     "Zeeshan Amjad",
     "ForgeLoop",
+    "Sentinel",
   ],
   authors: [{ name: profile.name, url: profile.github }],
   creator: profile.name,
@@ -49,7 +70,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#07070b",
+  themeColor: "#0e0d0b",
   colorScheme: "dark",
 };
 
@@ -61,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${cinzel.variable} ${inter.variable} ${jetbrains.variable} ${imfell.variable} antialiased`}
     >
       <body className="min-h-screen bg-bg text-fg">{children}</body>
     </html>

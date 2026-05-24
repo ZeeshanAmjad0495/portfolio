@@ -1,92 +1,49 @@
 export const profile = {
   name: "Zeeshan Amjad",
-  role: "Software Engineer",
+  role: "Automation Engineer & Systems Builder",
   tagline:
-    "I build maintainable test automation that keeps web apps, APIs, and CI pipelines honest — and I design AI-assisted workflows that make software delivery faster and safer.",
-  location: "Pakistan · Remote-ready",
+    "I design automation frameworks, multi-tenant backends, AI-assisted workflows, and quality-focused platforms. I like turning messy manual work into systems that hold up.",
+  location: "Pakistan · Remote",
   email: "zeeshan04956@gmail.com",
   github: "https://github.com/ZeeshanAmjad0495",
   linkedin: "https://www.linkedin.com/in/zeeshan-amjad-bb08ab185/",
+  upwork: "",
+  availability:
+    "Open to freelance and contract work: automation systems, AI-assisted workflows, backend automation, multi-tenant SaaS tools, and scraping or reporting pipelines.",
   yearsExperience: 4,
 } as const;
 
 export const about = {
   summary:
-    "QA Automation Engineer / SDET with 4 years of experience in web automation, API testing, regression testing, accessibility testing, and performance/load testing. Strong hands-on experience with Playwright, Cypress, TypeScript, JavaScript, Postman, GoCD, and GitHub Actions, building maintainable test automation frameworks.",
-  detail:
-    "I've validated frontend workflows, backend API behavior, CI/CD execution, test data, and bot-driven data-extraction flows across MOOC, online gaming, online assessment, and insurance automation products. I also use Claude and OpenAI/ChatGPT for requirements analysis, test-case ideation, debugging support, automation planning, and agentic SDLC/STLC workflow design.",
+    "I'm a QA automation engineer and SDET with four years of experience, currently at Arbisoft. Day to day I build maintainable test automation for web apps, APIs, and CI pipelines. On my own time I build the kind of software I test: multi-tenant SaaS backends, an automation framework, and AI-assisted developer tools.",
+  bridge:
+    "So the title undersells it a little. The QA work is real and pays the bills. The independent work is where I've shipped production-grade systems with their own databases, auth, audit trails, and test suites.",
+  personal:
+    "Outside the editor I read a lot, train, and chase questions in philosophy, psychology, and metaphysics. That sensibility shows up here more in how the site feels than in anything I'd say out loud.",
   highlights: [
-    { value: "4+", label: "Years in QA automation" },
+    { value: "4+", label: "Years in QA & automation" },
+    { value: "7", label: "Systems built" },
     { value: "50+", label: "APIs validated" },
-    { value: "50+", label: "Flaky tests stabilized" },
-    { value: "4", label: "Production-scale products" },
+    { value: "1,000+", label: "Automated tests written" },
   ],
 };
 
-export const skillGroups: { title: string; skills: string[] }[] = [
+export const domains = [
   {
-    title: "Test Automation",
-    skills: [
-      "Playwright",
-      "Cypress",
-      "Puppeteer",
-      "Selenium",
-      "Jest",
-      "E2E Testing",
-      "Regression",
-      "Integration",
-      "Accessibility",
-    ],
+    name: "Online learning (MOOC)",
+    note: "Web automation, regression coverage, and workflow validation.",
   },
   {
-    title: "API & Backend Validation",
-    skills: [
-      "Postman",
-      "REST APIs",
-      "Request/Response Validation",
-      "API Contract Checks",
-      "Backend Flow Analysis",
-      "Test Data Validation",
-    ],
+    name: "Online multiplayer gaming",
+    note: "Load testing, regression optimization, and reliability checks.",
   },
   {
-    title: "Performance & Reliability",
-    skills: [
-      "k6",
-      "Locust",
-      "Grafana k6",
-      "Load Testing",
-      "Flaky Test Investigation",
-      "Test Stability",
-      "Root-Cause Analysis",
-    ],
+    name: "Online assessment",
+    note: "Automation coverage for assessment workflows.",
   },
   {
-    title: "CI/CD & Tooling",
-    skills: [
-      "GoCD",
-      "GitHub Actions",
-      "Git",
-      "Docker",
-      "CI Test Execution",
-      "Pipeline Validation",
-      "Test Reporting",
-    ],
-  },
-  {
-    title: "Languages",
-    skills: ["TypeScript", "JavaScript", "Python"],
-  },
-  {
-    title: "AI-Assisted Engineering",
-    skills: [
-      "Claude",
-      "OpenAI / ChatGPT",
-      "Prompt-Driven Analysis",
-      "Test Planning",
-      "SDLC Workflow Design",
-      "AI-Assisted Debugging",
-    ],
+    name: "Insurance data extraction",
+    note: "Bot validation, extraction accuracy, and edge-case testing.",
   },
 ];
 
@@ -98,14 +55,14 @@ export const experience = [
     period: "Feb 2022 – Present",
     current: true,
     points: [
-      "Built and maintained automated test suites using Playwright, Cypress, TypeScript, and JavaScript across edX, Xiangqi, LitmusTest, and Zuub.",
-      "Automated ~30 test cases for edX, 2 automation flows for LitmusTest, and 5–6 load-testing scenarios for Xiangqi, covering critical workflows, regression paths, and platform-specific validation.",
-      "Tested 50+ APIs using Postman and automated validation, covering request/response behavior, data validation, and backend workflow correctness.",
-      "Integrated and maintained automated test execution in GoCD pipelines, supporting CI-based regression checks and deployment validation.",
-      "Reduced Xiangqi regression execution time by ~10% by automating repeated validation flows and improving execution reliability.",
-      "Investigated and reduced 50+ flaky test issues by reviewing selectors, application state, network calls, logs, API responses, timing, and test data.",
-      "Validated Zuub data-extraction bot behavior for American dental insurance websites, covering extraction accuracy, edge cases, and workflow reliability.",
-      "Improved automation reliability through reusable fixtures, cleaner test structure, stronger selectors, better test data handling, and retry-aware workflows.",
+      "Build and maintain automated test suites with Playwright, Cypress, TypeScript, and JavaScript across four products: a MOOC platform, an online multiplayer game, an online assessment platform, and a US dental-insurance data-extraction product.",
+      "Automated around 30 cases for the learning platform, two flows for the assessment platform, and five to six load scenarios for the game, covering critical workflows and regression paths.",
+      "Tested 50+ APIs with Postman and automated validation, checking request and response behavior, data, and backend workflow correctness.",
+      "Integrated and maintained automated test runs in GoCD pipelines for CI regression and deployment checks.",
+      "Cut the game's regression run time by about 10% by automating repeated validation flows and steadying execution.",
+      "Investigated and reduced 50+ flaky tests by working through selectors, app state, network calls, logs, timing, and test data.",
+      "Validated the dental-insurance extraction bot for accuracy and edge cases across many insurer websites.",
+      "Improved reliability with reusable fixtures, cleaner test structure, stronger selectors, and retry-aware flows.",
     ],
   },
   {
@@ -115,94 +72,60 @@ export const experience = [
     period: "Jun 2021 – Jan 2022",
     current: false,
     points: [
-      "Supported enterprise software users by investigating issues, reproducing defects, and coordinating with engineering teams for resolution.",
-      "Analyzed application behavior, user workflows, logs, and data issues to identify root causes and document clear findings.",
-      "Communicated with customers and internal teams to troubleshoot production issues and maintain clear issue visibility.",
-      "Built a practical foundation in defect analysis, product behavior, customer-facing troubleshooting, and software support.",
+      "Supported enterprise software users by investigating issues, reproducing defects, and coordinating fixes with engineering.",
+      "Analyzed application behavior, user workflows, logs, and data to find root causes and write up clear findings.",
+      "Worked with customers and internal teams to troubleshoot production issues and keep their status visible.",
+      "Built a foundation in defect analysis, product behavior, and customer-facing troubleshooting.",
     ],
   },
 ];
 
-export const domains = [
-  {
-    name: "edX",
-    note: "MOOC / online learning — web automation, regression coverage, workflow validation.",
-  },
-  {
-    name: "Xiangqi",
-    note: "Online multiplayer Chinese chess — load testing, regression optimization, reliability validation.",
-  },
-  {
-    name: "LitmusTest",
-    note: "Online test platform — automation coverage for assessment workflows.",
-  },
-  {
-    name: "Zuub",
-    note: "US dental insurance data extraction — bot support, extraction validation, edge-case testing.",
-  },
-];
+export const aiIntro =
+  "I use AI as a working partner, not a shortcut. It helps me plan architecture, draft implementations, review diffs, think through test strategy and edge cases, and keep documentation honest. I work with Claude and Claude Code, OpenAI, DeepSeek, and local models, and I keep human judgment, quality gates, and accountability in the loop. What I care about is the workflow: AI that helps plan, build, test, and review software under clear rules.";
 
-export type Project = {
-  name: string;
-  subtitle: string;
-  featured?: boolean;
-  tags: string[];
-  points: string[];
-};
-
-export const projects: Project[] = [
+export const aiPractices = [
   {
-    name: "ForgeLoop Suite",
-    subtitle: "Agentic SDLC / STLC Automation Platform",
-    featured: true,
-    tags: [
-      "AI Agents",
-      "QA Automation",
-      "Claude",
-      "OpenAI / ChatGPT",
-      "SDLC/STLC Workflows",
-    ],
-    points: [
-      "A project-aware, human-supervised AI workflow platform for requirements intake, ticket generation, implementation workflows, QA gates, CI feedback, testing evidence, audit artifacts, and long-term project memory.",
-      "Uses Claude and OpenAI/ChatGPT for AI-assisted requirement analysis, planning, test strategy, review loops, and agent-guided engineering workflows.",
-      "Built around deterministic QA checks, human approval gates, project-context management, and evidence-based software delivery.",
-    ],
+    title: "Architecture planning",
+    detail: "Sketching system shape, boundaries, and tradeoffs before any code.",
   },
   {
-    name: "Sentinel",
-    subtitle: "Web Automation Framework",
-    tags: ["TypeScript", "Playwright", "Framework Design", "CI/CD"],
-    points: [
-      "Tool-agnostic web automation framework focused on reusable components, stable selectors, scalable test architecture, and maintainable flows.",
-      "Hybrid Component Object Model + Functional Page Model approach separating page structure from business workflows.",
-      "Reusable fixtures, environment configuration, structured test flows, and clearer automation event patterns.",
-    ],
+    title: "Implementation drafting",
+    detail: "Turning a plan into first-pass code that I then review and harden.",
   },
   {
-    name: "Automated Web Scraping & Reporting Tool",
-    subtitle: "Data Extraction & Reporting",
-    tags: [
-      "TypeScript / JavaScript",
-      "Automation",
-      "Data Extraction",
-      "Data Validation",
-      "Reporting",
-    ],
-    points: [
-      "Automation workflows for extracting data from multiple websites and generating structured reports.",
-      "Validation checks to improve data accuracy and handle edge cases during extraction and reporting.",
-    ],
+    title: "Code review",
+    detail: "A second pass over diffs for bugs, edge cases, and risk.",
+  },
+  {
+    title: "Test strategy",
+    detail: "Finding the cases worth covering and the ones likely to break.",
+  },
+  {
+    title: "Product planning",
+    detail: "Shaping features and scope for the SaaS work.",
+  },
+  {
+    title: "Local LLMs",
+    detail: "Running smaller models locally to keep agent work affordable.",
+  },
+  {
+    title: "Cost-aware routing",
+    detail: "Sending each task to a model that fits its difficulty and price.",
+  },
+  {
+    title: "Human-supervised agents",
+    detail: "Letting agents do the work behind approval gates and evidence.",
   },
 ];
 
 export const certifications = [
   { name: "Responsive Web Design", issuer: "freeCodeCamp", status: "Completed" },
   {
-    name: "JavaScript Algorithms and Data Structures",
+    name: "JavaScript Algorithms & Data Structures",
     issuer: "freeCodeCamp",
     status: "Completed",
   },
-  { name: "ASTQB CTFL 4.0", issuer: "ISTQB / ASTQB", status: "In progress" },
+  { name: "ISTQB CTFL 4.0", issuer: "ASTQB", status: "In progress" },
   {
     name: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
@@ -217,8 +140,10 @@ export const education = [
 
 export const navLinks = [
   { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#experience", label: "Experience" },
+  { href: "#arsenal", label: "Arsenal" },
+  { href: "#world-map", label: "World Map" },
   { href: "#projects", label: "Projects" },
+  { href: "#ai", label: "AI" },
+  { href: "#experience", label: "Experience" },
   { href: "#contact", label: "Contact" },
 ];

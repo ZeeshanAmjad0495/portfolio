@@ -24,6 +24,11 @@
 .DS_Store
 *.pem
 
+# local preview / screenshot artifacts
+/.playwright-mcp/
+/checkpoint*.png
+/prod-*.png
+
 # debug
 npm-debug.log*
 yarn-debug.log*

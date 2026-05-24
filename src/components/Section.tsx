@@ -23,13 +23,14 @@ export default function Section({
     >
       <Reveal>
         <div className="mb-12 flex flex-col gap-3">
-          <span className="font-mono text-sm text-accent">
-            {index} <span className="text-muted">/</span> {kicker ?? title}
+          <span className="font-mono text-xs uppercase tracking-[0.28em] text-gold">
+            {index} <span className="text-bronze">·</span>{" "}
+            <span className="text-muted">{kicker ?? title}</span>
           </span>
-          <h2 className="text-3xl font-semibold tracking-tight text-fg sm:text-4xl">
+          <h2 className="font-display text-3xl font-semibold tracking-tight text-fg sm:text-4xl">
             {title}
           </h2>
-          <div className="h-px w-full max-w-xs bg-gradient-to-r from-accent/60 to-transparent" />
+          <div className="gold-rule mt-1 w-full max-w-xs" />
         </div>
       </Reveal>
       {children}

@@ -2,10 +2,15 @@ import Background from "@/components/Background";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
+import Arsenal from "@/components/Arsenal";
+import ProjectModalProvider from "@/components/ProjectModalProvider";
+import ProjectMap from "@/components/ProjectMap";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import AISystems from "@/components/AISystems";
+import Philosophy from "@/components/Philosophy";
+import QuestLog from "@/components/QuestLog";
 import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
-import Credentials from "@/components/Credentials";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -17,10 +22,16 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Skills />
+        <Arsenal />
+        <ProjectModalProvider>
+          <ProjectMap />
+          <FeaturedProjects />
+        </ProjectModalProvider>
+        <AISystems />
+        <Philosophy />
+        <QuestLog />
         <Experience />
-        <Projects />
-        <Credentials />
+        <Resume />
         <Contact />
       </main>
       <Footer />
