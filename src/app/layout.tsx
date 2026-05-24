@@ -34,6 +34,11 @@ const description =
   "Zeeshan Amjad — software engineer with experience in test automation, backend development, and building systems with AI. Builds multi-tenant SaaS backends, an automation framework, and AI-assisted developer tools.";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000",
+  ),
   title: {
     default: `${profile.name} — ${profile.role}`,
     template: `%s · ${profile.name}`,
