@@ -1,8 +1,8 @@
 export const profile = {
   name: "Zeeshan Amjad",
-  role: "Automation Engineer & Systems Builder",
+  role: "Software Engineer",
   tagline:
-    "I design automation frameworks, multi-tenant backends, AI-assisted workflows, and quality-focused platforms. I like turning messy manual work into systems that hold up.",
+    "I'm a software engineer who builds across test automation, backend systems, and AI-assisted software. I like turning messy manual work into systems that hold up.",
   location: "Pakistan · Remote",
   email: "zeeshan04956@gmail.com",
   github: "https://github.com/ZeeshanAmjad0495",
@@ -15,9 +15,9 @@ export const profile = {
 
 export const about = {
   summary:
-    "I'm a QA automation engineer and SDET with four years of experience, currently at Arbisoft. Day to day I build maintainable test automation for web apps, APIs, and CI pipelines. On my own time I build the kind of software I test: multi-tenant SaaS backends, an automation framework, and AI-assisted developer tools.",
+    "I'm a software engineer. For the past four years my professional work has been test automation and quality engineering at Arbisoft, and alongside it I build the kind of software I test: multi-tenant SaaS backends, an automation framework, and AI-assisted developer tools.",
   bridge:
-    "So the title undersells it a little. The QA work is real and pays the bills. The independent work is where I've shipped production-grade systems with their own databases, auth, audit trails, and test suites.",
+    "My day job is test automation, and that work is real. The systems I build on my own run wider and deeper: full-stack and backend-heavy, with their own databases, auth, audit trails, and test suites.",
   personal:
     "Outside the editor I read a lot, train, and chase questions in philosophy, psychology, and metaphysics. That sensibility shows up here more in how the site feels than in anything I'd say out loud.",
   highlights: [

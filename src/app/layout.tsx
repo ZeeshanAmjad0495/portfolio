@@ -31,7 +31,7 @@ const imfell = IM_Fell_English_SC({
 });
 
 const description =
-  "Zeeshan Amjad — automation engineer, systems builder, and AI-assisted architect. Builds automation frameworks, multi-tenant backends, AI-assisted workflows, and quality-focused platforms.";
+  "Zeeshan Amjad — software engineer with experience in test automation, backend development, and building systems with AI. Builds multi-tenant SaaS backends, an automation framework, and AI-assisted developer tools.";
 
 export const metadata: Metadata = {
   title: {
@@ -40,15 +40,16 @@ export const metadata: Metadata = {
   },
   description,
   keywords: [
+    "Software Engineer",
+    "Backend Developer",
     "Automation Engineer",
     "SDET",
-    "Systems Builder",
     "AI Engineering",
-    "Playwright",
     "TypeScript",
     "NestJS",
     "FastAPI",
     "Multi-tenant SaaS",
+    "Playwright",
     "Zeeshan Amjad",
     "ForgeLoop",
     "Sentinel",

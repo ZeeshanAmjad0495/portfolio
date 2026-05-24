@@ -75,11 +75,9 @@ export default function Hero() {
         className="animate-unfurl font-display relative mt-3 max-w-4xl text-4xl font-semibold leading-[1.08] tracking-tight text-fg sm:text-6xl"
         style={{ animationDelay: "120ms" }}
       >
-        Automation Engineer,
+        Software Engineer
         <br />
-        Systems Builder,
-        <br />
-        <span className="text-gilt">AI-Assisted Architect.</span>
+        <span className="text-gilt">across automation, backend, and AI.</span>
       </h1>
 
       <p
@@ -122,7 +120,7 @@ export default function Hero() {
       >
         <span>{profile.location}</span>
         <span className="hidden h-1 w-1 rounded-full bg-bronze sm:inline-block" />
-        <span>{profile.yearsExperience}+ yrs in QA & automation</span>
+        <span>{profile.yearsExperience}+ yrs in software</span>
         <span className="hidden h-1 w-1 rounded-full bg-bronze sm:inline-block" />
         <span>7 systems shipped</span>
         <span className="hidden h-1 w-1 rounded-full bg-bronze sm:inline-block" />
